@@ -2,7 +2,7 @@
  * as its parameters and returns the element such that k elements have greater 
  * or equal value. If k = 0, return the largest element; if k = 1, return the 
  * second largest element, and so on. Assume that 0 <= k < a.length.
- */
+ 
 public int kthLargest(int k, int[] a) {
     return select(a, 0, a.length - 1, a.length - k);
 }
@@ -38,4 +38,11 @@ public int partition(int[] a, int p, int r) {
     a[i + 1] = a[r];
     a[r] = temp;
     return i + 1;
-}
+}*/
+
+public static int kthLargest (int k, int[]param1){
+    Arrays.sort(param1);
+    k = param1[param1.length-k-1]; 
+return k;
+
+
